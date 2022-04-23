@@ -1,24 +1,22 @@
 # Testing_lab
-import java.util.Scanner;
+include<stdio.h>
+ int main()
+ {
+     char ch;
+     int num1,num2;
 
-public class Main {
-  public static void main(String[] args) 
-  {
-    Scanner input = new Scanner (System.in);
-    System.out.print("Input the first number: ");
-    int num1 = input.nextInt();
-    System.out.print("Input the second number: ");
-    int num2 = input.nextInt();
-    int sum = num1 + num2;
-    System.out.println();
-    System.out.println("Sum: "+sum);
-  }
-}
+     printf("Choose the operator(+,-,*,/,%%): ");
+     scanf("%c",&ch);
 
-public class Exercise2 {
- 
- public static void main(String[] args) {
-  System.out.println(24+26);
- }
- 
-}
+     printf("Enter two numbers: ");
+     scanf("%d %d",&num1,&num2);
+
+     switch(ch)
+     {
+       case '+':
+         printf("%d + %d =\t%d\n",num1,num2,num1+num2); 
+         break;
+       case '-':
+         printf("%d - %d =\t%d\n",num1,num2,num1-num2);
+         break;
+      
